@@ -45,7 +45,7 @@ l4=tf.nn.softmax(tf.matmul(l3_drop,W4)+b4);
 
 #optimizer
 cross_entropy=tf.reduce_sum(tf.multiply(y_,tf.log(l4)));
-optimizer=tf.train.AdamOptimizer(0.01).minimize(cross_entropy);
+optimizer=tf.train.AdamOptimizer(0.0001).minimize(cross_entropy);
 
 #accuracy
 
